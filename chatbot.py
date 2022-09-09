@@ -20,7 +20,7 @@ class ChatBot:
         # Resize the image using resize() method
         resize_image = image.resize((200, 70))
         self.img = ImageTk.PhotoImage(resize_image)
-        Title_label =Label(main_frame,bd=3,relief = RAISED,anchor ='nw' , width = 730 ,compound=LEFT, image = self.img ,text="chat me",font=('arial',30,'bold'),fg='green',bg='white')
+        Title_label =Label(main_frame,bd=3,relief = RAISED,anchor ='nw' , width = 730 ,compound=LEFT, image = self.img ,text="chat me",font=('arial',30,'bold'),fg='red',bg='white')
         Title_label.pack(side=TOP)
         self.scroll_y=tkinter.Scrollbar(main_frame,orient=VERTICAL)
         self.text=Text(main_frame,width=65,height=20,bd=3,relief=RAISED,font=('arial',14),yscrollcommand=self.scroll_y.set)
@@ -28,7 +28,7 @@ class ChatBot:
         self.text.pack()
         btn_frame = Frame (self.root,bd=4,bg ='white',width = 720)
         btn_frame.pack()
-        label_1=Label(btn_frame,text='Type Something',font=('arial',14,'bold'),fg='green',bg='white')
+        label_1=Label(btn_frame,text='Type Something',font=('arial',14,'bold'),fg='red',bg='white')
         label_1.grid(row=0,column=0,padx=5,sticky=W)
        
         self.entry=StringVar()
